@@ -3,10 +3,11 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    display: flex;
 
-    @include atSmall{ width: 90%; max-width: 517px; }
-    @include atMedium{ width: 750px; }
-    @include atLarge{ width: 970px; }
-    @include atExtraLarge{ width: 1170px; }
+    @include atSmall{ width: 90% !important; }
+    @include atMedium{ width: 750px !important; }
+    @include atLarge{ width: 970px !important; }
+    @include atExtraLarge{ width: 1170px !important; }
 
   }

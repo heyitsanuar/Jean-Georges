@@ -1,0 +1,23 @@
+.btn{
+    font-family: 'Arapey', sans-serif;
+    font-size: 16px;
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 50px;
+    transition: all .3s ease;
+
+    &--transparent{
+        background: none;
+    }
+
+    &--border-white{
+        color: #ffffff;
+        border: 1px solid #ffffff;
+
+        &:hover{
+            background: #ffffff;
+            color: #444444;
+        }
+    }
+
+}

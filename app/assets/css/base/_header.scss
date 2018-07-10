@@ -1,0 +1,72 @@
+header{
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+}
+
+.header{
+
+    &__navigation{
+        position: fixed;
+        width: 100%;
+        padding: 50px 0;
+        background: none;
+        display: flex;
+    }
+
+    &__logo{
+        @extend .col-lg-1;
+        text-align: center;
+
+        img{
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    &__menu{
+        @extend .col-lg-11;
+        @extend .flex-center;
+        padding-right: 50px;
+
+        a{
+            font-family: 'Muli', sans-serif;
+            font-size: 14px;
+            padding: 10px 23px;
+            transition: all .3s ease;
+
+            &:hover{
+                background: #ffffff;
+                color: black;
+            }
+        }
+    }
+
+    &__banner{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-40%);
+        width: 100%;
+        font-family: 'Sacramento', cursive;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    &__background{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title{
+        font-size: 106px;
+        margin-bottom: 28px;
+    }
+
+    &__subtitle{
+        font-size: 30px;
+        margin-bottom: 90px;
+    }
+
+}
