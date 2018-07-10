@@ -1,0 +1,387 @@
+.col{
+
+    &-1 { @include setColLength(8.333333%); }
+    &-2 { @include setColLength(16.666667%); }
+    &-3 { @include setColLength(25%); }
+    &-4 { @include setColLength(33.333333%); }
+    &-5 { @include setColLength(41.666667%); }
+    &-6 { @include setColLength(50%); }
+    &-7 { @include setColLength(58.333333%); }
+    &-8 { @include setColLength(66.666667%); }
+    &-9 { @include setColLength(75%); }
+    &-10 { @include setColLength(83.333333%); }
+    &-11 { @include setColLength(91.666667%); }
+    &-12 { @include setColLength(100%); }
+
+    &-xl{
+
+        &-1{
+            @include atExtraLarge{
+                @extend .col-1;
+            }
+        }
+
+        &-2{
+            @include atExtraLarge{
+                @extend .col-2;
+            }
+        }
+
+        &-3{
+            @include atExtraLarge{
+                @extend .col-3;
+            }
+        }
+
+        &-4{
+            @include atExtraLarge{
+                @extend .col-4;
+            }
+        }
+
+        &-5{
+            @include atExtraLarge{
+                @extend .col-5;
+            }
+        }
+
+        &-6{
+            @include atExtraLarge{
+                @extend .col-6;
+            }
+        }
+
+        &-7{
+            @include atExtraLarge{
+                @extend .col-7;
+            }
+        }
+
+        &-8{
+            @include atExtraLarge{
+                @extend .col-8;
+            }
+        }
+
+        &-9{
+            @include atExtraLarge{
+                @extend .col-9;
+            }
+        }
+
+        &-10{
+            @include atExtraLarge{
+                @extend .col-10;
+            }
+        }
+
+        &-11{
+            @include atExtraLarge{
+                @extend .col-11;
+            }
+        }
+
+        &-12{
+            @include atExtraLarge{
+                @extend .col-12;
+            }
+        }
+    }
+
+    &-lg{
+        &-1{
+            @include atLarge{
+                @extend .col-1;
+            }
+        }
+
+        &-2{
+            @include atLarge{
+                @extend .col-2;
+            }
+        }
+
+        &-3{
+            @include atLarge{
+                @extend .col-3;
+            }
+        }
+
+        &-4{
+            @include atLarge{
+                @extend .col-4;
+            }
+        }
+
+        &-5{
+            @include atLarge{
+                @extend .col-5;
+            }
+        }
+
+        &-6{
+            @include atLarge{
+                @extend .col-6;
+            }
+        }
+
+        &-7{
+            @include atLarge{
+                @extend .col-7;
+            }
+        }
+
+        &-8{
+            @include atLarge{
+                @extend .col-8;
+            }
+        }
+
+        &-9{
+            @include atLarge{
+                @extend .col-9;
+            }
+        }
+
+        &-10{
+            @include atLarge{
+                @extend .col-10;
+            }
+        }
+
+        &-11{
+            @include atLarge{
+                @extend .col-11;
+            }
+        }
+
+        &-12{
+            @include atLarge{
+                @extend .col-12;
+            }
+        }
+    }
+
+    &-md{
+        &-1{
+            @include atMedium{
+                @extend .col-1;
+            }
+        }
+
+        &-2{
+            @include atMedium{
+                @extend .col-2;
+            }
+        }
+
+        &-3{
+            @include atMedium{
+                @extend .col-3;
+            }
+        }
+
+        &-4{
+            @include atMedium{
+                @extend .col-4;
+            }
+        }
+
+        &-5{
+            @include atMedium{
+                @extend .col-5;
+            }
+        }
+
+        &-6{
+            @include atMedium{
+                @extend .col-6;
+            }
+        }
+
+        &-7{
+            @include atMedium{
+                @extend .col-7;
+            }
+        }
+
+        &-8{
+            @include atMedium{
+                @extend .col-8;
+            }
+        }
+
+        &-9{
+            @include atMedium{
+                @extend .col-9;
+            }
+        }
+
+        &-10{
+            @include atMedium{
+                @extend .col-10;
+            }
+        }
+
+        &-11{
+            @include atMedium{
+                @extend .col-11;
+            }
+        }
+
+        &-12{
+            @include atMedium{
+                @extend .col-12;
+            }
+        }
+    }
+
+    &-sm{
+        &-1{
+            @include atSmall{
+                @extend .col-1;
+            }
+        }
+
+        &-2{
+            @include atSmall{
+                @extend .col-2;
+            }
+        }
+
+        &-3{
+            @include atSmall{
+                @extend .col-3;
+            }
+        }
+
+        &-4{
+            @include atSmall{
+                @extend .col-4;
+            }
+        }
+
+        &-5{
+            @include atSmall{
+                @extend .col-5;
+            }
+        }
+
+        &-6{
+            @include atSmall{
+                @extend .col-6;
+            }
+        }
+
+        &-7{
+            @include atSmall{
+                @extend .col-7;
+            }
+        }
+
+        &-8{
+            @include atSmall{
+                @extend .col-8;
+            }
+        }
+
+        &-9{
+            @include atSmall{
+                @extend .col-9;
+            }
+        }
+
+        &-10{
+            @include atSmall{
+                @extend .col-10;
+            }
+        }
+
+        &-11{
+            @include atSmall{
+                @extend .col-11;
+            }
+        }
+
+        &-12{
+            @include atSmall{
+                @extend .col-12;
+            }
+        }
+    }
+
+    &-xs{
+        &-1{
+            @include atExtraSmall{
+                @extend .col-1;
+            }
+        }
+
+        &-2{
+            @include atExtraSmall{
+                @extend .col-2;
+            }
+        }
+
+        &-3{
+            @include atExtraSmall{
+                @extend .col-3;
+            }
+        }
+
+        &-4{
+            @include atExtraSmall{
+                @extend .col-4;
+            }
+        }
+
+        &-5{
+            @include atExtraSmall{
+                @extend .col-5;
+            }
+        }
+
+        &-6{
+            @include atExtraSmall{
+                @extend .col-6;
+            }
+        }
+
+        &-7{
+            @include atExtraSmall{
+                @extend .col-7;
+            }
+        }
+
+        &-8{
+            @include atExtraSmall{
+                @extend .col-8;
+            }
+        }
+
+        &-9{
+            @include atExtraSmall{
+                @extend .col-9;
+            }
+        }
+
+        &-10{
+            @include atExtraSmall{
+                @extend .col-10;
+            }
+        }
+
+        &-11{
+            @include atExtraSmall{
+                @extend .col-11;
+            }
+        }
+
+        &-12{
+            @include atExtraSmall{
+                @extend .col-12;
+            }
+        }
+    }
+    
+}
