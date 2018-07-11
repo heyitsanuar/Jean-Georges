@@ -5,50 +5,142 @@
     background-size: cover;
     background-position: 50% 50%;
     max-height: 100%;
-    padding-top: 73px;
-    padding-bottom: 103px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    @include atSmall{
+        padding-top: 53px;
+        padding-bottom: 23px;
+    }
+
+    @include atMedium{
+        padding-top: 73px;
+        padding-bottom: 103px;
+    }
+
+    @include atLarge{
+        padding-top: 73px;
+        padding-bottom: 103px;
+    }
 
     &__container{
         @extend .flex-center;
+        flex-wrap: wrap;
+
+        @include atMedium{
+            flex-wrap: nowrap;
+        }
+
     }
 
     &__info{
         @extend .col-lg-6;
         font-family: 'Muli', sans-serif;
+        text-align: center;
+
+        @include atMedium{
+            text-align: left;
+            padding-left: 40px;
+        }
+
+        @include atLarge{
+            padding-left: 0;
+        }
     }
 
     &__title{
-        font-size: 36px;
+        font-size: 24px;
         margin-bottom: 20px;
         color: #ffffff;
+
+        @include atSmall{
+            font-size: 36px;
+        }
+
+        @include atMedium{
+            font-size: 26px;
+        }
+
+        @include atLarge{
+            font-size: 36px;
+        }
     }
     
     &__subtitle{
-        margin-top: 36px;
-        font-size: 20px;
+        margin-top: 25px;
+        font-size: 16px;
         color: #979797;
+
+        @include atSmall{
+            margin-top: 36px;
+            font-size: 20px;
+        }
+
+        @include atMedium{
+            font-size: 18px;
+        }
+
+        @include atLarge{
+            font-size: 20px;
+        }
     }
     
     &__description{
-        max-width: 80%;
+        font-size: 14px;
+        width: 100%;
+        max-width: 100%;
         color: #979797;
+
+        @include atSmall{
+            font-size: 16px;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        @include atMedium{
+            margin: 0;
+        }
     }
 
     &__images{
         @extend .col-lg-6;
+        display: flex;
+        margin-top: 45px;
         min-height: 303px;
+
+        @include atMedium{
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        @include atLarge{
+            margin-top: 45px;
+        }
     }
 
     &__image{
-        width: 325px;
-        height: 220px;
+        width: 50%;
+        height: 200px;
+
+        @include atMedium{
+            width: 170px;
+            height: 130px;
+        }
+
+        @include atLarge{
+            width: 325px;
+            height: 220px;
+        }
 
         &--right{
             float: right;
         }
 
         &--move-up{
-            transform: translateY(-50%);
+            @include atMedium{
+                transform: translateY(-50%);
+            }
         }
     }
 
