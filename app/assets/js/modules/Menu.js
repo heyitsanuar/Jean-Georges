@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-class Header {
+class Menu {
     
     constructor(){
         this.btnMenu = $("#btn-menu");
@@ -10,13 +10,14 @@ class Header {
     }
 
     events(){
-        this.btnMenu.on("click", this.showMenu.bind(this));
+        this.btnMenu.click(this.showMenu.bind(this));
     }
 
     showMenu(){
-        this.menu.toggleClass("header__menu--is-active");
+        console.log('Hey');
+        console.log(this.menu);
     }
     
 }
 
-export default Header;
+export default Menu;

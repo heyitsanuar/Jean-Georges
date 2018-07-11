@@ -10,6 +10,10 @@ header{
 
 .header{
 
+    &__container{
+        @extend .flex-space-between;
+    }
+
     &__navigation{
         position: fixed;
         width: 100%;
@@ -37,14 +41,21 @@ header{
     &__menu{
         @extend .col-sm-8;
         @extend .col-md-11;
-        @extend .flex-center;
-        display: none !important;
+        display: none;
+        padding-top: 50px;
         
         a{
             font-family: 'Muli', sans-serif;
-            font-size: 0.875rem;
-            padding: 0.625rem 1.4375rem;
+            font-size: 16px;
+            padding: 20px;
+            margin: 0 50px;
             transition: all .3s ease;
+
+            @include atSmall{
+                font-size: 0.875rem;
+                margin: 0;
+                padding: 0.625rem 1.4375rem;
+            }
 
             &:hover{
                 background: #ffffff;
@@ -54,16 +65,35 @@ header{
 
         @include atSmall{
             display: flex !important;
-            justify-content: flex-end !important;
+            justify-content: center !important;
+            align-items: center !important;
+            align-content: center !important;
+            padding: 0;
         }
-
-        @include atMedium{
-            padding-right: 5rem;
-        }
-
+        
         @include atLarge{
             padding-right: 6.875rem;
             justify-content: center !important;
+        }
+
+        &--is-active{
+
+            @include atExtraSmall{
+                display: flex !important;
+                align-content: flex-start !important;
+                flex-wrap: wrap;
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.7);
+    
+                a{
+                    width: 100%;
+                }
+            }
+
         }
     }
 
@@ -111,6 +141,21 @@ header{
         @include atMedium{
             font-size: 1.875rem;
             margin-bottom: 5.625rem;
+        }
+    }
+
+    &__toggle{
+        
+        @extend .my-centered;
+        font-size: 26px;
+        color: #ffffff;
+
+        @include atExtraSmall{
+
+        }
+
+        @include atSmall{
+            display: none;
         }
     }
 

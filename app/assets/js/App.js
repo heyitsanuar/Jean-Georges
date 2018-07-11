@@ -1,3 +1,3 @@
 import Header from './modules/Header';
 
-var menu = new Header();
+var header = new Header();
