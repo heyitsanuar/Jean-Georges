@@ -42,13 +42,13 @@ header{
         @extend .col-sm-8;
         @extend .col-md-11;
         display: none;
-        padding-top: 50px;
+        padding-top: 3.125rem;
         
         a{
             font-family: 'Muli', sans-serif;
-            font-size: 16px;
-            padding: 20px;
-            margin: 0 50px;
+            font-size: 1rem;
+            padding: 1.25rem;
+            margin: 0 3.125rem;
             transition: all .3s ease;
 
             @include atSmall{
@@ -147,12 +147,8 @@ header{
     &__toggle{
         
         @extend .my-centered;
-        font-size: 26px;
+        font-size: 1.625rem;
         color: #ffffff;
-
-        @include atExtraSmall{
-
-        }
 
         @include atSmall{
             display: none;

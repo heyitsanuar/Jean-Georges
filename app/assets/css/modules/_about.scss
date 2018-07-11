@@ -1,0 +1,55 @@
+.about{
+    background-image: url('../../assets/img/About/background.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    max-height: 100%;
+    padding-top: 73px;
+    padding-bottom: 103px;
+
+    &__container{
+        @extend .flex-center;
+    }
+
+    &__info{
+        @extend .col-lg-6;
+        font-family: 'Muli', sans-serif;
+    }
+
+    &__title{
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #ffffff;
+    }
+    
+    &__subtitle{
+        margin-top: 36px;
+        font-size: 20px;
+        color: #979797;
+    }
+    
+    &__description{
+        max-width: 80%;
+        color: #979797;
+    }
+
+    &__images{
+        @extend .col-lg-6;
+        min-height: 303px;
+    }
+
+    &__image{
+        width: 325px;
+        height: 220px;
+
+        &--right{
+            float: right;
+        }
+
+        &--move-up{
+            transform: translateY(-50%);
+        }
+    }
+
+}

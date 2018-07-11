@@ -1,0 +1,9 @@
+.separator{
+    height: 2px;
+    width: 300px;
+    background: black;
+
+    &--white{
+        background: #ffffff;
+    }
+}
