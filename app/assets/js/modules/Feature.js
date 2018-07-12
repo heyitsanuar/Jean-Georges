@@ -23,10 +23,10 @@ class Feature{
             if(scrollBar >= 760){
                 console.log(scrollBar);
                 if(this.prevScrollValue > scrollBar){
-                    $(this.featureFood).css({'top': '+=1.5px'});
+                    $(this.featureFood).css({'top': '+=1px'});
                     $(this.featureBackground).css({'top': '+=1px'});
                 }else{
-                    $(this.featureFood).css({'top': '-=1.5px'});
+                    $(this.featureFood).css({'top': '-=1px'});
                     $(this.featureBackground).css({'top': '-=1px'});
                 }
             }else{
