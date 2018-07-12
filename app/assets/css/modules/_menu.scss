@@ -1,0 +1,54 @@
+.menu{
+    padding-bottom: 11.6875rem;
+
+    &__title-food{
+        font-family: 'Muli', sans-serif;
+        font-size: 4.5rem;
+        letter-spacing: 4px;
+        text-align: center;
+        color: #E2E2E2;
+        margin: 0;
+    }
+
+    &__title-container{
+        width: 32.8125rem;
+        margin: auto;
+        margin-top: 0.9375rem;
+    }
+
+    &__frame{
+        width: 14.375rem;
+        height: 5.8125rem;
+        margin: auto;
+        background: #ffffff;
+        transform: translateY(-50%);
+    }
+
+    &__frame-image{
+        width: 100%;
+        height: 100%;
+    }
+
+    &__title{
+        position: relative;
+        top: -110px;
+        font-family: 'Sacramento', cursive;
+        font-size: 2.875rem;
+        text-align: center;
+    }
+
+    &__slogan{
+        font-family: 'Muli', sans-serif;
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+        color: $mainBlack;
+        text-align: center;
+        margin-bottom: 2.6875rem;
+        transform: scaleX(0.75);
+
+        &--red{
+            color: $mainRed;
+        }
+    }
+
+}
