@@ -1,3 +1,4 @@
+/*BASE MODULES*/
 @import 'base/_variables';
 @import 'base/_mixins';
 @import 'base/_utils';
@@ -5,7 +6,7 @@
 @import 'base/_global';
 @import 'base/_header';
 @import 'base/_footer';
-/* Modules*/
+/*CUSTOM MODULES*/
 @import 'modules/_btn';
 @import 'modules/_image';
 @import 'modules/_separator';
@@ -13,3 +14,6 @@
 @import 'modules/_feature';
 @import 'modules/_enjoy';
 @import 'modules/_comment';
+@import 'modules/_menu';
+@import 'modules/_gallery';
+@import 'modules/_food';

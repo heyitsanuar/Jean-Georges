@@ -1,0 +1,56 @@
+.gallery{
+    @extend .col-lg-12;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 4.375rem;
+    height: 21.875rem;
+    width: 100% !important;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    
+    @include atSmall{
+        width: 100% !important;
+        padding-top: 7.6875rem;
+        height: 50rem;
+    }
+    
+    @include atExtraLarge{
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        display: flex !important;
+        width: 1170px !important;
+    }
+
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+
+        &--h33{ height: 33%; }
+        &--h66{ height: 67%; }
+        &--h100{ height: 100%; }
+
+        &--w66{ width: 67%; }
+        &--w33{ width: 33%; }
+    }
+
+    &__item{
+        position: relative;
+
+        &--h25{ height: 25%; }
+        &--h50{ height: 50%; }
+        &--h100{ height: 100%; }
+
+        &--w20{ width: 20%; }
+        &--w30{ width: 30%; }
+        &--w40{ width: 40%; }
+        &--w50{ width: 50%; }
+        &--w60{ width: 60%; }
+        &--w70{ width: 70%; }
+        &--w80{ width: 80%; }
+    }
+}
