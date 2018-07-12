@@ -1,32 +1,63 @@
 .features{
-    padding-top: 7.9375rem;
-    padding-bottom: 7.9375rem;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
     background-image: url('../../assets/img/Features/wall-background.png');
     background-size: contain;
     background-repeat: repeat;
+
+    @include atMedium{
+        padding-top: 1.25rem;
+        padding-bottom: 6.25rem;
+    }
+
+    @include atLarge{
+        padding-top: 7.9375rem;
+        padding-bottom: 7.9375rem;
+    }
 
     &__container{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+
+        @include atMedium{
+            width: 90% !important
+        }
+
     }
 }
 
 .feature{
     @extend .col-lg-12;
     display: flex;
-    justify-content: center;
-    margin: 3.625rem 0;
+    flex-wrap: wrap;
+    margin: 0.625rem 0;
+    
+    @include atSmall{
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 3.625rem 0;
+    }
 
     &__info{
         background: #ffffff;
         color: #444444;
         text-align: center;
-        width: 25.3125rem;
-        height: 18.3125rem;
-        z-index: 300;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        transition: all .3s cubic-bezier(.25,.8,.25,1);
+        width: 100%;
+        height: 13.75rem;
+                
+        @include atSmall{
+            width: 21.875rem;
+            height: 17.5rem;
+            z-index: 300;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all .3s cubic-bezier(.25,.8,.25,1);
+        }
+
+        @include atLarge{
+            width: 25.3125rem;
+            height: 18.3125rem;
+        }
 
         &:hover{
             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -34,10 +65,21 @@
     }
 
     &__image{
-        position: relative;
-        top: 72px;
-        width: 407px;
-        height: 280px;
+        width: 100%;
+        height: 12.5rem;
+
+        @include atMedium{
+            position: relative;
+            top: 42px;
+            width: 23.125rem;
+            height: 17.5rem;
+        }
+
+        @include atLarge{
+            top: 72px;
+            width: 25.4375rem;
+            height: 17.5rem;
+        }
 
         &--is-right{
             left: -65px;
@@ -50,20 +92,32 @@
 
     &__title{
         font-family: 'Muli', sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.125rem;
         margin: 0;
-        margin-top: 3.125rem;
+        margin-top: 2.5rem;
         margin-bottom: 1px;
         transform: scaleX(0.75);
         letter-spacing: 4px;
+
+        @include atSmall{
+            font-size: 1.5rem;
+            margin-top: 3.125rem;
+        }
     }
 
     &__description{
         font-family: 'Arapey', cursive;
-        font-size: 1rem;
+        font-size: 0.875rem;
+        width: 70%;
         margin: 0 auto;
-        margin-top: 2.5rem;
-        max-width: 15rem;
+        margin-top: 1.625rem;
+        
+        @include atSmall{
+            font-size: 1rem;
+            margin-top: 2.5rem;
+            max-width: 15rem;
+        }
+
     }
 
 }

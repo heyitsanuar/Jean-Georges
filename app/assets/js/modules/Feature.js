@@ -15,21 +15,25 @@ class Feature{
     }
 
     moveFeatureFood(){
-        var scrollBar = $(window).scrollTop();
-        var position = scrollBar * (-0.15);
-
-        if(scrollBar >= 760){
-            if(this.prevScrollValue > scrollBar){
-                $(this.featureFood).css({'top': '+=2px'});
-                $(this.featureBackground).css({'top': '+=2px'});
-            }else{
-                $(this.featureFood).css({'top': '-=2px'});
-                $(this.featureBackground).css({'top': '-=2px'});
+        if ( $(window).width() > 768) {      
+            //Add your javascript for large screens here 
+            var scrollBar = $(window).scrollTop();
+            var position = scrollBar * (-0.15);
+    
+            if(scrollBar >= 760){
+                if(this.prevScrollValue > scrollBar){
+                    $(this.featureFood).css({'top': '+=2px'});
+                    $(this.featureBackground).css({'top': '+=2px'});
+                }else{
+                    $(this.featureFood).css({'top': '-=2px'});
+                    $(this.featureBackground).css({'top': '-=2px'});
+                }
+    
+                this.prevScrollValue = scrollBar;
             }
 
-            this.prevScrollValue = scrollBar;
-        }
-
+            console.log("Executing");
+        } 
 
     }
 }
