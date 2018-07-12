@@ -1,0 +1,27 @@
+.enjoy{
+    padding: 150px 0;
+    font-family: 'Muli', sans-serif;
+    color: #ffffff;
+    background-image: url('../../assets/img/Experience/background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    &__container{
+        display: block !important;
+        text-align: center;
+    }
+
+    &__title{
+        font-size: 30px;
+        margin: 0 auto;
+        margin-bottom: 23px;
+    }
+
+    &__text{
+        color: #979797;
+        margin: 0 auto;
+        margin-top: 32px;
+        max-width: 400px;
+    }
+}
