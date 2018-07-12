@@ -18,21 +18,24 @@ class Feature{
         if ( $(window).width() > 768) {      
             //Add your javascript for large screens here 
             var scrollBar = $(window).scrollTop();
-            var position = scrollBar * (-0.15);
+            var position = scrollBar * (-0.1);
     
             if(scrollBar >= 760){
+                console.log(scrollBar);
                 if(this.prevScrollValue > scrollBar){
-                    $(this.featureFood).css({'top': '+=2px'});
-                    $(this.featureBackground).css({'top': '+=2px'});
+                    $(this.featureFood).css({'top': '+=1px'});
+                    $(this.featureBackground).css({'top': '+=1px'});
                 }else{
-                    $(this.featureFood).css({'top': '-=2px'});
-                    $(this.featureBackground).css({'top': '-=2px'});
+                    $(this.featureFood).css({'top': '-=1px'});
+                    $(this.featureBackground).css({'top': '-=1px'});
                 }
-    
-                this.prevScrollValue = scrollBar;
+            }else{
+                $(this.featureFood).css({'top': '72px'});
+                $(this.featureBackground).css({'top': '72px'});
             }
+            this.prevScrollValue = scrollBar;
 
-            console.log("Executing");
+
         } 
 
     }

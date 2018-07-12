@@ -1,0 +1,43 @@
+.enjoy{
+    padding: 100px 0;
+    font-family: 'Muli', sans-serif;
+    color: #ffffff;
+    background-image: url('../../assets/img/Experience/background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    @include atMedium{
+        padding: 150px 0;
+    }
+
+    &__container{
+        display: block !important;
+        text-align: center;
+    }
+
+    &__title{
+        font-size: 1.5rem;
+        margin-bottom: 1.25rem;
+    
+        @include atSmall{
+            font-size: 30px;
+            margin: 0 auto;
+            margin-bottom: 23px;
+        }
+    }
+
+    &__text{
+        font-size: 0.875rem;
+        color: #979797;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        
+        @include atSmall{
+            font-size: 1rem;
+            margin-top: 32px;
+            max-width: 400px;
+        }
+    }
+}
