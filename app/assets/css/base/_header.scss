@@ -29,9 +29,24 @@ header{
         background: none;
         display: flex;
         justify-content: space-between;
+        transition: all .8s ease;
 
         @include atLarge{
             padding: 3.125rem 0;
+        }
+
+        &--dark{
+            background: $mainBlack;
+            z-index: 2000;
+            padding: 15px 0;
+
+            a{
+                color: #ffffff;
+            }
+            
+            @include atMedium{
+                padding: 20px;
+            }
         }
     }
 
