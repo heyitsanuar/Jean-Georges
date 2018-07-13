@@ -3,6 +3,7 @@
     font-size: 1rem;
     background: #ffffff;
     color: #000000;
+    cursor: pointer;
     padding: 0.625rem 3.125rem;
     transition: all .3s ease;
 
@@ -18,6 +19,24 @@
             background: #ffffff;
             color: #444444;
         }
+    }
+
+    &--newlestter{
+        font-family: 'Muli', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #ffffff;
+        background: #F0932B;
+        border: none;
+        margin-top: 1.25rem;
+        min-height: 1.125rem;
+        min-width: 8.125rem;
+        
+        @include atExtraLarge{
+            min-width: 9.75rem;
+            min-height: 2.75rem;
+        }
+        
     }
 
 }

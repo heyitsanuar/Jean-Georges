@@ -1,0 +1,127 @@
+footer{
+    position: relative;
+    height: 700px;
+
+    @include atLarge{
+        height: auto;
+    }
+}
+
+.footer{
+    
+    &__container{
+        flex-wrap: wrap;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @extend .container;
+        transform: translate(-50%,-50%);
+        display: flex;
+        text-align: center;
+        z-index: 1000;
+
+        @include atLarge{
+            flex-wrap: nowrap;
+        }
+    }
+
+    &__newlestter{
+        @extend .col-xs-12;
+        @extend .col-md-5;
+        @extend .col-lg-5;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__location{
+        @extend .col-xs-12;
+        @extend .col-md-3;
+        @extend .col-lg-3;
+        margin-top: 50px;
+
+        @include atLarge{
+            margin-top: 0;
+        }
+    }
+
+    &__social{
+        @extend .col-xs-12;
+        @extend .col-md-4;
+        @extend .col-lg-4;
+        margin-top: 50px;
+        
+        @include atLarge{
+            margin-top: 0;
+        }
+    }
+
+    &__title{
+        font-family: 'Muli', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        color: #ffffff;
+        margin-bottom: 45px;
+
+        &--updates{
+            font-family: 'Sacramento', cursive;
+            font-size: 32px;
+            width: 100%;
+            margin: 0;
+            margin-bottom: 28px;
+        }
+
+    }
+
+    &__text{
+        font-family: 'Muli', sans-serif;
+        font-size: 0.875rem;
+        color: #ffffff;
+        margin: 0;
+        margin-bottom: 4px;
+    }
+
+    &__newlestter-email{
+        font-family: 'Muli', sans-serif;
+        font-size: 0.875rem;
+        color: #444444;
+        background: rgba(255, 255, 255, 0.5);
+        border: none;
+        width: 80%;
+        padding: 0.875rem 1.25rem;
+
+        @include atMedium{
+            width: 75%;
+        }
+
+        @include atLarge{
+            width: 15.625rem;
+            height: 0.5rem;
+        }
+
+        @include atExtraLarge{
+            width: 20.1875rem;
+            padding: 0.9375rem 1.625rem;
+        }
+
+    }
+
+    &__social-icon{
+        display: inline-block;
+        height: 1.875rem;
+        width: 1.875rem;
+        font-size: 1.875rem;
+        position: relative;
+        top: -0.9375rem;
+        padding: 0.9375rem;
+        border-radius: 50%;
+        transition: all .3s ease;
+
+        &:hover{
+            &.facebook{ background: $facebook; }
+            &.twitter{ background: $twitter; }
+            &.instagram{ background: $instagram; }
+            &.youtube{ background: $youtube; }
+        }
+    }
+}
