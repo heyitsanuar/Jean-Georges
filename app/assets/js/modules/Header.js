@@ -5,6 +5,7 @@ import smothScroll from 'jquery-smooth-scroll';
 class Header {
     
     constructor(){
+        this.lazyImages = $(".lazyload");
         this.btnMenuOpen = $("#btn-menu-open");
         this.btnMenuClose = $("#btn-menu-close");
         this.banner = $("#banner-info");
@@ -21,12 +22,19 @@ class Header {
         this.createHeaderWaypoints();
         this.createPageSectionWaypoints();
         this.addSmothScrolling();
+        this.refreshWaypoints();
         this.events();
     }
 
     events(){
         this.btnMenuOpen.on("click", this.showMenu.bind(this));
         this.btnMenuClose.on("click", this.showMenu.bind(this));
+    }
+
+    refreshWaypoints(){
+        this.lazyImages.on('load', function(){
+            Waypoint.refreshAll();
+        });
     }
 
     showMenu(){

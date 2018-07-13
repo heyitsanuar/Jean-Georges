@@ -4,12 +4,20 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 class SlidingElement {
 
     constructor(els, offset, direction){
+        this.lazyImages = $(".lazyload");
         this.itemsToSlide = els;
         this.offsetPercentage = offset;
         this.classWithDirection = "slide-item--" + direction;
         
         this.moveInitially();
         this.createWaypoints();
+        this.refreshWaypoints();
+    }
+
+    refreshWaypoints(){
+        this.lazyImages.on('load', function(){
+            Waypoint.refreshAll();
+        });
     }
 
     moveInitially(){        

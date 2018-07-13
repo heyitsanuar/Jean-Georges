@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="temp/css/normalize.css">
     <link rel="stylesheet" href="temp/css/styles.css">
+    <script src="temp/js/Vendor.js"></script>
 </head>
 <body>
     <header id="home" class="page-section" data-matching-link="#link-home">
@@ -37,7 +38,7 @@
         </div>
     </header>
     <section class="landing-page">
-        <section id="about" class="about page-section" data-matching-link="#link-about">
+        <section id="about" class="about page-section lazyload" data-matching-link="#link-about">
             <div class="container about__container">
                 <div class="about__info">
                     <h3 class="about__title">About us</h3>
@@ -51,15 +52,15 @@
                 </div>
                 <div class="about__images">
                     <div class="about__image about__image--right">
-                        <img class="image" src="assets/img/About/about-left.jpg" alt="">
+                        <img class="image lazyload" data-src="assets/img/About/about-left.jpg" alt="">
                     </div>
                     <div class="about__image about__image--move-up">
-                        <img class="image" src="assets/img/About/about-right.jpg" alt="">
+                        <img class="image lazyload" data-src="assets/img/About/about-right.jpg" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="features">
+        <section class="features lazyload">
             <div class="container features__container">
                 <div class="feature" id="feature-container-food">
                     <div class="feature__info">
@@ -72,12 +73,12 @@
                         </p>
                     </div>
                     <div id="feature-food" class="feature__image feature__image--is-right">
-                        <img class="image" src="assets/img/Features/our-food.jpg" alt="">
+                        <img class="image lazyload" data-src="assets/img/Features/our-food.jpg" alt="">
                     </div>
                 </div>
                 <div class="feature" id="feature-container-background">
                     <div id="feature-background" class="feature__image feature__image--is-left">
-                        <img class="image" src="assets/img/Features/our-background.jpg" alt="">
+                        <img class="image lazyload" data-src="assets/img/Features/our-background.jpg" alt="">
                     </div>
                     <div class="feature__info">
                         <h4 class="feature__title">OUR BACKGROUND</h4>
@@ -91,7 +92,7 @@
                 </div>
             </div>
         </section>
-        <section id="services" class="enjoy page-section" data-matching-link="#link-services">
+        <section id="services" class="enjoy page-section lazyload" data-matching-link="#link-services">
             <div class="container enjoy__container">
                 <h2 class="enjoy__title">Enjoy the experience</h2>
                 <div class="separator separator--white"></div>
@@ -116,13 +117,13 @@
             </div>
             <div class="comment__images">
                 <div class="image__container--x45 image__container--y100">
-                    <img class="image" src="assets/img/Experience/comment-big.jpg" alt="">
+                    <img class="image lazyload" data-src="assets/img/Experience/comment-big.jpg" alt="">
                 </div>
                 <div class="image__container--x45 image__container--y55">
-                    <img class="image" src="assets/img/Experience/comment-medium.jpg" alt="">
+                    <img class="image lazyload" data-src="assets/img/Experience/comment-medium.jpg" alt="">
                 </div>
                 <div class="image__container--x45 image__container--y40">
-                    <img class="image" src="assets/img/Experience/comment-small.jpg" alt="">
+                    <img class="image lazyload" data-src="assets/img/Experience/comment-small.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -133,7 +134,7 @@
                     <div class="separator separator--w100"></div>
                     <div class="menu__frame-container">
                         <div class="menu__frame">
-                            <img class="menu__frame-image" src="assets/img/Experience/frame.png" alt="">
+                            <img class="menu__frame-image lazyload" data-src="assets/img/Experience/frame.png" alt="">
                             <h2 class="menu__title">Menu</h2>
                         </div>
                     </div>
@@ -150,7 +151,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, error.
                             </p>
                         </div>
-                        <img class="image" src="assets/img/Food/menu/1.jpg">
+                        <img class="image lazyload" data-src="assets/img/Food/menu/1.jpg">
                     </div>
                     <div class="gallery__item gallery__item--w30 gallery__item--h100">
                         <div class="food">
@@ -159,7 +160,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, error.
                             </p>
                         </div>
-                        <img class="image" src="assets/img/Food/menu/2.jpg">
+                        <img class="image lazyload" data-src="assets/img/Food/menu/2.jpg">
                     </div>
                 </div>
                 <div class="gallery__container gallery__container--h66 gallery__container--w66">
@@ -170,7 +171,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, error.
                             </p>
                         </div>
-                        <img class="image" src="assets/img/Food/menu/3.jpg">
+                        <img class="image lazyload" data-src="assets/img/Food/menu/3.jpg">
                     </div>
                     <div class="gallery__container gallery__item--h100 gallery__item--w70">
                         <div class="gallery__item gallery__item--h50 gallery__item--w60">
@@ -180,7 +181,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, error.
                                 </p>
                             </div>
-                            <img class="image" src="assets/img/Food/menu/4.jpg">
+                            <img class="image lazyload" data-src="assets/img/Food/menu/4.jpg">
                         </div>
                         <div class="gallery__item gallery__item--h50 gallery__item--w40">
                             <div class="food">
@@ -189,7 +190,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, error.
                                 </p>
                             </div>
-                            <img class="image" src="assets/img/Food/menu/5.jpg">
+                            <img class="image lazyload" data-src="assets/img/Food/menu/5.jpg">
                         </div>
                         <div class="gallery__item gallery__item--h50 gallery__item--w100">
                             <div class="food">
@@ -198,7 +199,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, error.
                                 </p>
                             </div>
-                            <img class="image" src="assets/img/Food/menu/6.jpg">
+                            <img class="image lazyload" data-src="assets/img/Food/menu/6.jpg">
                         </div>
                     </div>
                 </div>
@@ -210,7 +211,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, error.
                             </p>
                         </div>
-                        <img class="image" src="assets/img/Food/menu/7.jpg">
+                        <img class="image lazyload" data-src="assets/img/Food/menu/7.jpg">
                     </div>
                     <div class="gallery__item gallery__item--h25 gallery__item--w100">
                         <div class="food">
@@ -219,7 +220,7 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, error.
                             </p>
                         </div>
-                        <img class="image" src="assets/img/Food/menu/8.jpg">
+                        <img class="image lazyload" data-src="assets/img/Food/menu/8.jpg">
                     </div>
                     <div class="gallery__item gallery__item--h25 gallery__item--w100">
                         <div class="food">
@@ -228,14 +229,14 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, error.
                             </p>
                         </div>
-                        <img class="image" src="assets/img/Food/menu/9.jpg">
+                        <img class="image lazyload" data-src="assets/img/Food/menu/9.jpg">
                     </div>
                 </div>
             </section>
         </section>
     </section>
     <footer id="contact" class="page-section" data-matching-link="#link-contact">
-        <img class="image" src="assets/img/Footer/background.png" alt="">
+        <img class="image lazyload" data-src="assets/img/Footer/background.png" alt="">
         <div class="footer__container">
             <div class="footer__newlestter">
                 <p class="footer__title footer__title--updates">Receive Updates</p>
@@ -261,6 +262,6 @@
             </div>
         </div>
     </footer>
-    <script src="temp/js/Script.js"></script>
+    <script src="temp/js/App.js"></script>
 </body>
 </html>
