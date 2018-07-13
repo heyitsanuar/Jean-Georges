@@ -1,9 +1,12 @@
 .features{
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
-    background-image: url('../../assets/img/Features/wall-background.png');
-    background-size: contain;
-    background-repeat: repeat;
+
+    &.lazyloaded{
+        background-image: url('../../assets/img/Features/wall-background.png');
+        background-size: contain;
+        background-repeat: repeat;
+    }
 
     @include atMedium{
         padding-top: 1.25rem;

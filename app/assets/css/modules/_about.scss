@@ -1,12 +1,15 @@
 .about{
-    background-image: url('../../assets/img/About/background.png');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
     max-height: 100%;
     padding-top: 1.25rem;
     padding-bottom: 0.625rem;
+    
+    &.lazyloaded{
+        background-image: url('../../assets/img/About/background.png');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
 
     @include atSmall{
         padding-top: 3.3125rem;

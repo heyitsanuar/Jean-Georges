@@ -2,10 +2,13 @@
     padding: 100px 0;
     font-family: 'Muli', sans-serif;
     color: #ffffff;
-    background-image: url('../../assets/img/Experience/background.png');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
+
+    &.lazyloaded{
+        background-image: url('../../assets/img/Experience/background.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
 
     @include atMedium{
         padding: 150px 0;
