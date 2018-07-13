@@ -15,7 +15,9 @@
         <div class="header__navigation">
             <div class="container header__container">
                 <div class="header__logo">
-                    <img src="assets/img/Logos/JG Logo White.png" alt="">
+                    <a href="#home" id="link-logo">
+                        <img class="image" src="assets/img/Logos/JG Logo White.png">
+                    </a>
                 </div>
                 <nav id="menu" class="header__menu">
                     <i id="btn-menu-close" class="header__menu-exit fas fa-times"></i>
@@ -31,7 +33,7 @@
         <div id="banner-info" class="header__banner">
             <h1 class="header__title">Jean Georges</h1>
             <h2 class="header__subtitle">Food. First & Foremost</h2>
-            <a class="btn btn--transparent btn--border-white" href="#">About Us</a>
+            <a id="link-btn-about" class="btn btn--transparent btn--border-white" href="#about">About Us</a>
         </div>
     </header>
     <section class="landing-page">
@@ -59,7 +61,7 @@
         </section>
         <section class="features">
             <div class="container features__container">
-                <div class="feature">
+                <div class="feature" id="feature-container-food">
                     <div class="feature__info">
                         <h4 class="feature__title">OUR FOOD</h4>
                         <span class="separator--dotted">.....................</span>
@@ -73,7 +75,7 @@
                         <img class="image" src="assets/img/Features/our-food.jpg" alt="">
                     </div>
                 </div>
-                <div class="feature">
+                <div class="feature" id="feature-container-background">
                     <div id="feature-background" class="feature__image feature__image--is-left">
                         <img class="image" src="assets/img/Features/our-background.jpg" alt="">
                     </div>

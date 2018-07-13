@@ -1,9 +1,10 @@
 .menu{
     padding-top: 4.375rem;
-    padding-bottom: 11.6875rem;
+    padding-bottom: 6.25rem;
 
     @include atSmall{
         padding-top: 0px;
+        padding-bottom: 11.6875rem;
     }
 
     &__title-food{

@@ -1,0 +1,23 @@
+.slide-item{
+
+    &--left{
+        position: relative;
+        transition: all 1s ease-out;
+        left: -80px;
+    }
+    
+    &--right{
+        position: relative;
+        transition: all 1s ease-out;
+        right: -80px;
+    }
+
+    &--left-is-slided{
+        left: 0;
+    }
+
+    &--right-is-slided{
+        right: 0;
+    }
+
+}
