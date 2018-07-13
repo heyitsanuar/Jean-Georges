@@ -1,10 +1,16 @@
 footer{
     position: relative;
+    height: 700px;
+
+    @include atLarge{
+        height: auto;
+    }
 }
 
 .footer{
     
     &__container{
+        flex-wrap: wrap;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -13,9 +19,15 @@ footer{
         display: flex;
         text-align: center;
         z-index: 1000;
+
+        @include atLarge{
+            flex-wrap: nowrap;
+        }
     }
 
     &__newlestter{
+        @extend .col-xs-12;
+        @extend .col-md-5;
         @extend .col-lg-5;
         display: flex;
         flex-wrap: wrap;
@@ -23,11 +35,25 @@ footer{
     }
 
     &__location{
+        @extend .col-xs-12;
+        @extend .col-md-3;
         @extend .col-lg-3;
+        margin-top: 50px;
+
+        @include atLarge{
+            margin-top: 0;
+        }
     }
 
     &__social{
+        @extend .col-xs-12;
+        @extend .col-md-4;
         @extend .col-lg-4;
+        margin-top: 50px;
+        
+        @include atLarge{
+            margin-top: 0;
+        }
     }
 
     &__title{
@@ -57,29 +83,45 @@ footer{
 
     &__newlestter-email{
         font-family: 'Muli', sans-serif;
+        font-size: 0.875rem;
         color: #444444;
         background: rgba(255, 255, 255, 0.5);
         border: none;
-        padding: 15px 26px;
-        width: 323px;
+        width: 80%;
+        padding: 0.875rem 1.25rem;
+
+        @include atMedium{
+            width: 75%;
+        }
+
+        @include atLarge{
+            width: 15.625rem;
+            height: 0.5rem;
+        }
+
+        @include atExtraLarge{
+            width: 20.1875rem;
+            padding: 0.9375rem 1.625rem;
+        }
+
     }
 
     &__social-icon{
         display: inline-block;
-        height: 30px;
-        width: 30px;
-        font-size: 30px;
+        height: 1.875rem;
+        width: 1.875rem;
+        font-size: 1.875rem;
         position: relative;
-        top: -15px;
-        padding: 15px;
+        top: -0.9375rem;
+        padding: 0.9375rem;
         border-radius: 50%;
         transition: all .3s ease;
 
         &:hover{
-            &.facebook{ background: #3b5999; }
-            &.twitter{ background: #55acee; }
-            &.instagram{ background: #e4405f; }
-            &.youtube{ background: #cd201f; }
+            &.facebook{ background: $facebook; }
+            &.twitter{ background: $twitter; }
+            &.instagram{ background: $instagram; }
+            &.youtube{ background: $youtube; }
         }
     }
 }
