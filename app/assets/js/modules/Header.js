@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoints';
+import smothScroll from 'jquery-smooth-scroll';
 
 class Header {
     
@@ -11,8 +12,13 @@ class Header {
         
         this.header = $(".header__navigation");
         this.headerWaypointTrigger = $(".landing-page");
+        
+        this.pageSections = $(".page-section");
+        this.headerLinks = $(".header__menu a");
+        
         this.createHeaderWaypoints();
-
+        this.createPageSectionWaypoints();
+        this.addSmothScrolling();
         this.events();
     }
 
@@ -28,9 +34,7 @@ class Header {
     }
 
     createHeaderWaypoints(){
-        console.log("Hey");
         var thisPrev = this;
-        console.log(thisPrev);
 
         new Waypoint({
             element: this.headerWaypointTrigger[0],
@@ -44,6 +48,44 @@ class Header {
         });
     }
     
+    createPageSectionWaypoints(){
+        var thisPrev = this;
+
+        this.pageSections.each(function(){
+            var currentPageSection = this;
+
+            new Waypoint({
+                element: currentPageSection,
+                handler: function(direction){
+                    if(direction == 'down'){
+                        var matchingLink = currentPageSection.getAttribute("data-matching-link");
+                        
+                        thisPrev.headerLinks.removeClass("is-current-link");
+                        $(matchingLink).addClass("is-current-link");
+                    }
+                },
+                offset: "20%"
+            });
+
+            new Waypoint({
+                element: currentPageSection,
+                handler: function(direction){
+                    if(direction == 'up'){
+                        var matchingLink = currentPageSection.getAttribute("data-matching-link");
+                        
+                        thisPrev.headerLinks.removeClass("is-current-link");
+                        $(matchingLink).addClass("is-current-link");
+                    }
+                },
+                offset: "-30%"
+            });
+        });
+    }
+
+    addSmothScrolling(){
+        console.log("Smooth Scrolling");
+        this.headerLinks.smoothScroll();
+    }
 }
 
 export default Header;

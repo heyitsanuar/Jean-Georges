@@ -84,10 +84,11 @@ header{
                 padding: 0.625rem 1.4375rem;
             }
             
-            &:hover{
+            &:hover, &.is-current-link{
                 background: #ffffff;
                 color: #444444;
             }
+
         }
 
         @include atExtraSmall{

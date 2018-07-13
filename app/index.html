@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="temp/css/styles.css">
 </head>
 <body>
-    <header>
+    <header id="home" class="page-section" data-matching-link="#link-home">
         <div class="header__navigation">
             <div class="container header__container">
                 <div class="header__logo">
@@ -19,10 +19,10 @@
                 </div>
                 <nav id="menu" class="header__menu">
                     <i id="btn-menu-close" class="header__menu-exit fas fa-times"></i>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Contact</a>
+                    <a href="#home" id="link-home">Home</a>
+                    <a href="#about" id="link-about">About</a>
+                    <a href="#services" id="link-services">Services</a>
+                    <a href="#contact" id="link-contact">Contact</a>
                 </nav>
                 <i id="btn-menu-open" class="header__toggle fas fa-bars"></i>
             </div>
@@ -35,7 +35,7 @@
         </div>
     </header>
     <section class="landing-page">
-        <section class="about">
+        <section id="about" class="about page-section" data-matching-link="#link-about">
             <div class="container about__container">
                 <div class="about__info">
                     <h3 class="about__title">About us</h3>
@@ -89,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <section class="enjoy">
+        <section id="services" class="enjoy page-section" data-matching-link="#link-services">
             <div class="container enjoy__container">
                 <h2 class="enjoy__title">Enjoy the experience</h2>
                 <div class="separator separator--white"></div>
@@ -232,7 +232,7 @@
             </section>
         </section>
     </section>
-    <footer>
+    <footer id="contact" class="page-section" data-matching-link="#link-contact">
         <img class="image" src="assets/img/Footer/background.png" alt="">
         <div class="footer__container">
             <div class="footer__newlestter">
