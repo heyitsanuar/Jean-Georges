@@ -15,6 +15,8 @@ class Header {
         
         this.pageSections = $(".page-section");
         this.headerLinks = $(".header__menu a");
+        this.logo = $("#link-logo");
+        this.btnAbout = $("#link-btn-about");
         
         this.createHeaderWaypoints();
         this.createPageSectionWaypoints();
@@ -64,7 +66,7 @@ class Header {
                         $(matchingLink).addClass("is-current-link");
                     }
                 },
-                offset: "20%"
+                offset: "40%"
             });
 
             new Waypoint({
@@ -83,8 +85,9 @@ class Header {
     }
 
     addSmothScrolling(){
-        console.log("Smooth Scrolling");
         this.headerLinks.smoothScroll();
+        this.logo.smoothScroll();
+        this.btnAbout.smoothScroll();
     }
 }
 
