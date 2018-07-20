@@ -9,7 +9,7 @@
     }
     
     &--right{
-        @include atMedium{
+        @include atLarge{
             position: relative;
             transition: all 1s ease-out;
             right: -80px;
