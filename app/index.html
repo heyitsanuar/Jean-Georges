@@ -38,7 +38,11 @@
                 <i id="btn-menu-open" class="header__toggle fas fa-bars"></i>
             </div>
         </div>
-        <img class="header__background" src="assets/img/Header/background.jpg" alt="">
+        <picture>
+            <source srcset="assets/img/Header/background.jpg" media="(min-width: 992px)">
+            <source srcset="assets/img/Header/background-md.jpg" media="(min-width: 768px)">
+            <img class="header__background" srcset="assets/img/Header/background-ld.jpg">
+        </picture>
         <div id="banner-info" class="header__banner">
             <h1 class="header__title">Jean Georges</h1>
             <h2 class="header__subtitle">Food. First & Foremost</h2>
