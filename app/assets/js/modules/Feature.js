@@ -21,6 +21,8 @@ class Feature{
             var position = scrollBar * (-0.1);
     
             if(scrollBar >= 760){
+                //Allocating new top position to parallax
+                //Substraction or addition depending on scroll move
                 if(this.prevScrollValue > scrollBar){
                     $(this.featureFood).css({'top': '+=1px'});
                     $(this.featureBackground).css({'top': '+=1px'});
@@ -33,8 +35,6 @@ class Feature{
                 $(this.featureBackground).css({'top': '72px'});
             }
             this.prevScrollValue = scrollBar;
-
-
         } 
 
     }

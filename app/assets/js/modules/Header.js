@@ -11,9 +11,11 @@ class Header {
         this.banner = $("#banner-info");
         this.menu = $("#menu");
         
+        //Header change class elements
         this.header = $(".header__navigation");
         this.headerWaypointTrigger = $(".landing-page");
         
+        //Page section elements both header and body
         this.pageSections = $(".page-section");
         this.headerLinks = $(".header__menu a");
         this.logo = $("#link-logo");
@@ -43,6 +45,7 @@ class Header {
         this.btnMenuClose.toggleClass("header__menu-exit--is-visible");
     }
 
+    //Creates waypoints for elements
     createHeaderWaypoints(){
         var thisPrev = this;
 
@@ -58,6 +61,7 @@ class Header {
         });
     }
     
+    //Marks in header the current section you are in with a class
     createPageSectionWaypoints(){
         var thisPrev = this;
 
@@ -92,6 +96,7 @@ class Header {
         });
     }
 
+    //Adds smooth scroll to certain elements
     addSmothScrolling(){
         this.headerLinks.smoothScroll();
         this.logo.smoothScroll();
